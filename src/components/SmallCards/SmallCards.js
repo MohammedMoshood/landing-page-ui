@@ -7,12 +7,12 @@ import {
   InfoText,
 } from "./SmallCardElements";
 
-const SmallCards = ({ Img, altText, Heading, subtitle , id }) => {
+const SmallCards = ({ style ,Img, altText, Heading, subtitle , id }) => {
  
   return (
     <>
       
-          <InfoCard id={id}>
+          <InfoCard style={style} id={id}>
             <ImgWrap>
               <InfoImg src={Img} alt={altText}></InfoImg>
             </ImgWrap>

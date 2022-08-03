@@ -1,25 +1,52 @@
 import styled from "styled-components";
 
+
+
+export const InfoRow = styled.div`
+  position: relative;
+  display: flex;
+  background: transparent;
+  color: #2d353d;
+  width: 100%;
+  height: 600px;
+  align-items: center;
+  justify-content: center;
+  background: tan;
+
+  @media screen and (max-width: 768px) {
+    display: grid;
+    background: tan;
+    color: grey;
+    width: 100%;
+    height: 1600px;
+    align-items: center;
+    justify-content: center;
+  }
+`;
+
+
 export const InfoCard = styled.div`
   background: #f8f0e3;
   height: 500px;
   display: grid;
   width: 22%;
-  margin: 0 24px;
+  margin: 20px 24px;
   border-radius: 20px;
   justify-content: center;
+
   @media screen and (max-width: 768px) {
-    background: white;
+    background: #f8f0e3;
     height: 450px;
     display: grid;
     width: 480px;
-    margin: 24px auto;
+    margin-top: -100px;
     border-radius: 20px;
     justify-content: center;
   }
   &:hover {
     background: #e6eef0;
     transition: all 0.4s ease-in-out;
+    margin-bottom: -50px;
   }
 `;
 
@@ -55,27 +82,4 @@ export const InfoText = styled.p`
   max-width: 80%;
   text-align: center;
   line-height: 1.2;
-`;
-export const InfoRow = styled.div`
-  position: relative;
-  display: flex;
-  background: transparent;
-  color: #2d353d;
-  width: 100%;
-  height: 800px;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: -100px;
-  background: tan;
-
-  @media screen and (max-width: 768px) {
-    display: grid;
-    background: transparent;
-    color: grey;
-    width: 100%;
-    height: 1200px;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 200px;
-  }
 `;
