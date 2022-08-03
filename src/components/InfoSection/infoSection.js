@@ -3,7 +3,7 @@ import { Button } from '../GetStButton'
 
 import { InfoContainer , InfoWrapper , InfoRow , TopLine , Column1 , Column2 , BtnWrap , Subtitle , TextWrapper , ImgWrap , Img , Heading } from './infoElements'
 
-const InfoSection = ({id,imgStart,topLine, headline,description,img, alt ,buttonLabel , lightBg , needSpace  , darkText
+const InfoSection = ({to ,id,imgStart,topLine, headline,description,img, alt ,buttonLabel , lightBg , darkText , dark , primary
 }) => {
   return (
     <>
@@ -17,12 +17,14 @@ const InfoSection = ({id,imgStart,topLine, headline,description,img, alt ,button
                         <Subtitle darkText={darkText}>{description}</Subtitle>
                         < BtnWrap>
                             <Button 
+                            primary={primary}
+                            dark={dark}
                             smooth={true}
                             duration={500}
                             spy={true}
                             exact='true'
                             offset={-80}
-                            to='home'> {buttonLabel}</Button>
+                            to={to}> {buttonLabel}</Button>
                         </BtnWrap>
                     </TextWrapper>
                     </Column1>

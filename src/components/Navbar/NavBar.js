@@ -33,19 +33,22 @@ const NavBar = ({toggle}) => {
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks  to="home">Home</NavLinks>
+              <NavLinks to="home">Home</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="Services">Services</NavLinks>
+              <NavLinks to="services">Services</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="Pricing">Pricing</NavLinks>
+              <NavLinks to="pricing">Pricing</NavLinks>
             </NavItem>
             <NavItem>
               <NavLinks to="about">About</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="Contact">Contact</NavLinks>
+              <NavLinks to="contact">Contact</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="signup">Sign up</NavLinks>
             </NavItem>
           </NavMenu>
           <ButtonGroup>
@@ -53,7 +56,10 @@ const NavBar = ({toggle}) => {
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
               to="/login"
-              style={{ color: "white", backgroundColor: isHovering ? "blue": "#2D353D" }}
+              style={{
+                color: "white",
+                backgroundColor: isHovering ? "blue" : "#2D353D",
+              }}
             >
               Log in
             </Button>

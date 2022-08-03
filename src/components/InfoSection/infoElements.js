@@ -45,7 +45,6 @@ export const Column2 = styled.div`
   margin-bottom: 15px;
   padding: 0 15px;
   grid-area: col2;
-  margin-left: ${({needSpace})=>(needSpace? "-175px" : "0")};
 `;
 
 export const TextWrapper = styled.div`
