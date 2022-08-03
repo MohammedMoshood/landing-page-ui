@@ -5,17 +5,16 @@ import styled from "styled-components";
 export const InfoRow = styled.div`
   position: relative;
   display: flex;
-  background: transparent;
   color: #2d353d;
   width: 100%;
   height: 600px;
   align-items: center;
   justify-content: center;
-  background: tan;
+  background: transparent;
 
   @media screen and (max-width: 768px) {
     display: grid;
-    background: tan;
+    background: transparent;
     color: grey;
     width: 100%;
     height: 1600px;
